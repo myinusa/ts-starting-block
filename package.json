@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "eslint",
+    "postgresql",
+    "prettier",
+    "environment-variables",
+    "axios",
+    "pino",
+    "pnpm",
+    "eslint-plugin-sonarjs"
+  ],
+  "author": "Matthias Yinusa",
+  "license": "MIT",
   "scripts": {
     "type-check": "tsc",
     "build": "rimraf dist && tsc --noEmit false && tsc-alias",
