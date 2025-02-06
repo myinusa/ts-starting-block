@@ -1,0 +1,46 @@
+{
+  "name": "query-matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "type-check": "tsc",
+    "build": "rimraf dist && tsc --noEmit false && tsc-alias",
+    "start": "tsx src/index.ts",
+    "dev:tsx": "NODE_ENV=development tsx watch src/server",
+    "dev": "pnpm run \"/dev:/\"",
+    "dev:tsc": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/js": "^9.18.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-security-node": "^1.1.4",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  },
+  "dependencies": {
+    "@types/sha1": "^1.1.5",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "js-sha1": "^0.7.0",
+    "pg-promise": "^11.10.2",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
+  "include": [
+    "src/**/*",
+    "eslint.config.mjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

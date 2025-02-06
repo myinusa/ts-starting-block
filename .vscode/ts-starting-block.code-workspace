@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "eslint.debug": true,
+        "eslint.useFlatConfig": true,
+        "dbcode.connections": [],
+        "workbench.colorCustomizations": {
+            "activityBar.activeBackground": "#65c89b",
+            "activityBar.background": "#65c89b",
+            "activityBar.foreground": "#15202b",
+            "activityBar.inactiveForeground": "#15202b99",
+            "activityBarBadge.background": "#945bc4",
+            "activityBarBadge.foreground": "#e7e7e7",
+            "commandCenter.border": "#15202b99",
+            "debugConsole.errorForeground": "#d00",
+            "debugConsole.infoForeground": "#fff",
+            "debugConsole.sourceForeground": "#0c0",
+            "editor.findMatchBackground": "#ac82ff4f",
+            "editor.findMatchHighlightBackground": "#ac82ff20",
+            "editor.findMatchHighlightBorder": "#ac82ff70",
+            "editor.selectionBackground": "#6cffd350",
+            "editor.selectionHighlightBackground": "#6cffd320",
+            "editor.selectionHighlightBorder": "#6cffd370",
+            "editorGutter.modifiedBackground": "#e7701c",
+            "sash.hoverBorder": "#65c89b",
+            "statusBar.background": "#42b883",
+            "statusBar.foreground": "#15202b",
+            "statusBarItem.hoverBackground": "#359268",
+            "statusBarItem.remoteBackground": "#42b883",
+            "statusBarItem.remoteForeground": "#15202b",
+            "titleBar.activeBackground": "#42b883",
+            "titleBar.activeForeground": "#15202b",
+            "titleBar.inactiveBackground": "#42b88399",
+            "titleBar.inactiveForeground": "#15202b99"
+        },
+    }
+}
