@@ -5,7 +5,7 @@ Welcome to the TS Starting Block project!
 ## Description
 
 
-TS Starting Block is a TypeScript-based template project designed to provide a robust starting point for building web applications. It integrates several essential tools and practices including Axios for HTTP requests, Pino for logging, PostgreSQL for database interactions, and ESLint & Prettier for code quality.
+TS Starting Block is a TypeScript-based template project designed to provide a robust starting point for building applications. It integrates several essential tools and practices including Axios for HTTP requests, Pino for logging, PostgreSQL for database interactions, and ESLint & Prettier for code quality.
 
 - **HTTP Requests Handling**: Utilizes Axios for making HTTP requests with request/response interceptors.
 - **Logging**: Pino logger with console and file transport, extended to log to a database.
