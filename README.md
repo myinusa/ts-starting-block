@@ -57,7 +57,15 @@ TS Starting Block is a TypeScript-based template project designed to provide a r
    pnpm build
    ```
 
-#### TypeScript and Linter Configurations
+## Configuration
+
+### Google Release Please Configuration
+
+release-please requires a GitHub token to access the GitHub API. You configure this token via the token configuration option.
+
+- [Release Please](https://github.com/googleapis/release-please-action?tab=readme-ov-file#github-credentials)
+
+### TypeScript and Linter Configurations
 
 - The `tsconfig.json` sets up the TypeScript compiler options, targeting ECMAScript next versions.
 - ESLint is configured via `eslint.config.mjs`, enabling rules for TypeScript with plugins for security, SonarJS, and other utilities.
