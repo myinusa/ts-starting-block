@@ -8,6 +8,9 @@
         "eslint.debug": true,
         "eslint.useFlatConfig": true,
         "dbcode.connections": [],
+        "eslint.options": {
+            "overrideConfigFile": "./eslint.config.mjs"
+        },
         "workbench.colorCustomizations": {
             "activityBar.activeBackground": "#65c89b",
             "activityBar.background": "#65c89b",
