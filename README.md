@@ -29,7 +29,7 @@ TS Starting Block is a TypeScript-based template project designed to provide a r
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/myinusa/the-erratic-ensemble/ts-starting-block.git
+   git clone https://github.com/myinusa/ts-starting-block.git
    cd ts-starting-block
    ```
 
