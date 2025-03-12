@@ -20,8 +20,11 @@
   "license": "MIT",
   "scripts": {
     "type-check": "tsc",
-    "build": "rimraf dist && tsc --noEmit false && tsc-alias",
+    "build": "npx rimraf dist && tsc --noEmit false && npx tsc-alias",
     "start": "tsx src/index.ts",
+    "lint": "npx eslint '**/*.ts'",
+    "lint:fix": "npx eslint '**/*.ts' --fix",
+    "tsc:fix": "pnpm ts-fix --tsconfig ./tsconfig.json --ignoreGitStatus --write",
     "dev:tsx": "NODE_ENV=development tsx watch src/server",
     "dev": "pnpm run \"/dev:/\"",
     "dev:tsc": "tsc --watch --preserveWatchOutput"
