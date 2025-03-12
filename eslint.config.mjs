@@ -12,6 +12,7 @@ import unicorn from "eslint-plugin-unicorn";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import tseslint from "typescript-eslint";
+import globals from "globals"
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -66,6 +67,12 @@ const compat = new FlatCompat({
   allConfig: eslintjs.configs.all,
 });
 
+const cherryRules = {
+  "@typescript-eslint/naming-convention": "off",
+  "@typescript-eslint/no-unsafe-assignment": "off",
+  "@typescript-eslint/prefer-readonly-parameter-types": "off",
+};
+
 
 /** @type {Awaited<import('typescript-eslint').Config>} */
 export default tseslint.config(
@@ -80,8 +87,8 @@ export default tseslint.config(
     compat.extends(
       "plugin:promise/recommended",
       // "plugin:import/recommended",
-      "plugin:import/recommended",
-      "plugin:import/typescript",
+      // "plugin:import/recommended",
+      // "plugin:import/typescript",
     ),
   ),
   { files: ["src/**/*.{ts}"] },
@@ -113,6 +120,10 @@ export default tseslint.config(
         },
         tsconfigRootDir: import.meta.name,
       },
+      globals: {
+        ...globals.node,
+        ...globals.es2020,
+      },
       parser: tseslint.parser,
       ecmaVersion: 2022,
       sourceType: "module",
@@ -124,13 +135,15 @@ export default tseslint.config(
       ...sonarjs.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
       ...importRules,
+      ...cherryRules,
       "no-magic-numbers": ["warn", { ignoreArrayIndexes: true }],
       "unicorn/prefer-top-level-await": 0,
       "sonarjs/unused-import": 1,
       "@typescript-eslint/no-unused-vars": 0,
       "unicorn/prevent-abbreviations": 0,
+      "unicorn/prefer-ternary": 0,
       "unicorn/prefer-spread": 1,
-      "unicorn/no-null": 1,
+      "unicorn/no-null": 0,
       "sonarjs/no-dead-store": 0,
       "sonarjs/no-unused-vars": 0,
       "sonarjs/pseudo-random": 0,
