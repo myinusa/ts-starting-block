@@ -3,6 +3,10 @@ import logger from "@/lib/logger";
 import { setDatabaseClosed } from "./db-utils";
 
 export async function initializeDatabase() {
+  if (!isDatabaseConfigured || !pgpDatabase) {
+    logger.debug("Database not configured. Skipping initialization.");
+    return;
+  }
   try {
     await pgpDatabase.none(`
             CREATE TABLE IF NOT EXISTS logs (
